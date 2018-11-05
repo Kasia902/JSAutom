@@ -12,17 +12,17 @@ let lastname="Shumska";
 let age=30;
 console.log ("My name is " + firstname +" " + lastname + " and I am " + age +" years old");
 //4. Write a JS program to check a given integer is bigger then 100
-let a=30;
-console.log (a>100);
+let c=30;
+console.log (c>100);
 //5. Write a JS program to find if the first number is larger from the two given positive integers
-let a=30;
-let b=789;
-console.log (a>b);
+let d=30;
+let e=789;
+console.log (d>e);
 //6. Write a JS program to check two given numbers and return true if one of the number is 50 or if their sum is 50
-let a=30;
-let b=21;
-console.log((a == 50 || b == 50) || (a+b == 50));
+let f=30;
+let g=21;
+console.log((f == 50 || g == 50) || (f+g == 50));
 //7. Write a JS program check if a given positive number is a multiple of 3 or a multiple of 7
-let a=70;
-console.log("multiple of 3 " + (a%3 == 0));
-console.log("multiple of 7 " + (a%7 == 0));
+let h=70;
+console.log("multiple of 3 " + (h%3 == 0));
+console.log("multiple of 7 " + (h%7 == 0));
