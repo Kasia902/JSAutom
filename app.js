@@ -1,10 +1,10 @@
 //1. Write a JavaScript function to check if given string includes given symbol.
 let str1= " A B dlfkjhgdfljh jhdkhkjh jbkjhjkh";
-  function checksymbol2 (String){
+  function checksymbol (String){
       let result=/d/g.test(str1);
     return result;
   }
-  let a= checksymbol2 (str1);
+  let a= checksymbol (str1);
   console.log (`Contains: ${a}`);
 
   //2. Write a JavaScript function to check whether a string is blank or not.
