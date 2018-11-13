@@ -1,7 +1,7 @@
 //1. Write a JavaScript function to check if given string includes given symbol.
 let str1= " A B dlfkjhgdfljh jhdkhkjh jbkjhjkh";
-  function checksymbol (String){
-      let result=/d/g.test(str1);
+  function checksymbol(string) {
+      let result=/d/g.test(string);
     return result;
   }
   let a= checksymbol (str1);
@@ -9,8 +9,8 @@ let str1= " A B dlfkjhgdfljh jhdkhkjh jbkjhjkh";
 
   //2. Write a JavaScript function to check whether a string is blank or not.
   let str2="fdhtr ";
-  function checkIfBlank (String){
-      let result=String.replace (" ", "");
+  function checkIfBlank(string) {
+      let result=string.replace(" ", "");
       if (result.length > 0) 
       return false;
       else 
@@ -21,8 +21,8 @@ let str1= " A B dlfkjhgdfljh jhdkhkjh jbkjhjkh";
 
 //3. Write a JavaScript function to convert a string in abbreviated form. console.log(abbrev (“Nazar Babii")) – should be “N.B.”
 let str3="khrystyna shumska";
-function abbreviate(String){
-    let splitted=String.split (' ');
+function abbreviate(string){
+    let splitted=string.split (' ');
 if (splitted.length > 1) {
     return (splitted[0].charAt(0) + "." + splitted[1].charAt(0) + "."); 
 }
@@ -56,7 +56,7 @@ console.log(`Bigger number is ${f}`);
 //5. Write a JavaScript function with conditional statement to sort three numbers.
 let num1=23;
 let num2=34;
-let num3=1;
+let num3=12;
 function sortNumbers(){
     if (num1>num2 && num1>num3){
         if (num2>num3){
