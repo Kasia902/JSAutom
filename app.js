@@ -23,16 +23,19 @@ function sumArraysElements(array1, array2)
     if (array1.length != array2.length)
         throw new Error ("Arrays are not same lenght");
 
+    let array3 = [];
+
     for ( let i = 0; i < array1.length; i++ )
-    {
-       
-        console.log( array1[i] + array2[i] );
-    }
+        array3[i] = array1[i] + array2[i];
+
+    return array3;
 }
 
 let a = [ 1, 4, 5, 9 ];
 let b = [ 3, 7, 34, 1 ];
 let c = sumArraysElements(a, b);
+
+console.log(c);
 
 //4. Write a JavaScript program to calculate the area and perimeter of a rectangle. 
 //Rectangle should be an object with properties width and height and methods getArea() and getPerimeter();
