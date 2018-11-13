@@ -20,13 +20,17 @@ convertArrayToString([ 23, 44, 14, 3, 5, 7 ]);
 //write a JavaScript program to compute the sum of each individual index value from the given arrays and save them to third array
 function sumArraysElements(array1, array2)
 {
+    if (array1.length != array2.length)
+        throw new Error ("Arrays are not same lenght");
+
     for ( let i = 0; i < array1.length; i++ )
     {
+       
         console.log( array1[i] + array2[i] );
     }
 }
 
-let a = [ 1, 4, 5, 6 ];
+let a = [ 1, 4, 5, 9 ];
 let b = [ 3, 7, 34, 1 ];
 let c = sumArraysElements(a, b);
 
