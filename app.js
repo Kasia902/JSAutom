@@ -1,14 +1,15 @@
-console.log("\nNice work! Your first application have been launched.");
-console.log("Now, I need to know your name, type it below: ");
+let  Vehicle = require("./Vehicle.js");
+let Truck = require("./Truck.js");
+let Car = require("./Car.js");
+let Message = require("./Message.js");
 
-let stdin = process.openStdin();
+Message.showMessage();
 
-stdin.addListener("data", (txt) => {
-    if(txt.toString().trim() === "quit") {
-        console.log("\nHave a nice JS trip! Bye-bye");
-        stdin.end();
-    } else {
-        console.log(`\nHi ${txt.toString().trim()}, nice to meet you at Eleks QA Academy 2018. I am sure you'll become great in your job.`);
-        console.log(`${txt.toString().trim()}, to quit this application you can use 'Ctrl + C' keys, or type 'quit' and hit 'Enter'`); 
-    }   
-  });
+let WV = new Truck ("TT100", 2000, 150);
+WV.transportContainer();
+
+let Toyota = new Car ("ZX20", 2017, 250);
+Toyota.transportPeople();
+
+let Subaru = new Vehicle ("VB21", 1971, 100);
+Subaru.displayInfo();
