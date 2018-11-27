@@ -4,10 +4,9 @@
     "description": "",
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "JSON": "^1.0.0"
-    },
+    "dependencies": {},
     "devDependencies": {
+        "JSON": "^1.0.0",
         "fs": "0.0.1-security",
         "fs-extra": "^7.0.1",
         "json": "^9.0.6",
