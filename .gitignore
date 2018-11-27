@@ -1,0 +1,5 @@
+#Ignore thumbnails created by Windows
+Thumbs.db
+package-lock.json
+#Node modules packages folder
+node_packages/

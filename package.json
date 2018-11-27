@@ -3,6 +3,18 @@
     "version": "1.0.0",
     "description": "",
     "author": "",
-    "license": "ISC",    
-    "dependencies": {}
-  }
+    "license": "ISC",
+    "dependencies": {
+        "JSON": "^1.0.0"
+    },
+    "devDependencies": {
+        "fs": "0.0.1-security",
+        "fs-extra": "^7.0.1",
+        "json": "^9.0.6",
+        "lodash": "^4.17.11",
+        "random": "^2.0.12",
+        "randomstring": "^1.1.5",
+        "write": "^1.0.3"
+    },
+    "scripts": {}
+}

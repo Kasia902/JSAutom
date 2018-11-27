@@ -1,14 +1,42 @@
-console.log("\nNice work! Your first application have been launched.");
-console.log("Now, I need to know your name, type it below: ");
+const fs = require ("fs");
+let JSON = require ("JSON");
+//let lodash = require ("lodash");
+let randomstring = require ("randomstring");
+//let write = require ("write");
 
-let stdin = process.openStdin();
+let path = 'D:\\Temp\\';
+let filepath = 'D:\\Temp\\Test.txt';
 
-stdin.addListener("data", (txt) => {
-    if(txt.toString().trim() === "quit") {
-        console.log("\nHave a nice JS trip! Bye-bye");
-        stdin.end();
-    } else {
-        console.log(`\nHi ${txt.toString().trim()}, nice to meet you at Eleks QA Academy 2018. I am sure you'll become great in your job.`);
-        console.log(`${txt.toString().trim()}, to quit this application you can use 'Ctrl + C' keys, or type 'quit' and hit 'Enter'`); 
-    }   
+
+let student = {name:"Oksana", surname: "Petrova", rate: 21}; //Create a variable student and set ‘name’, ‘surname’ and ‘rate’ in json format
+
+Object.assign(student, { rate: (Math.random() * 100) }); //change rate
+Object.assign (student, {name: (randomstring.generate({
+    lenght:12, 
+    charset: 'alphabetic'
+})
+    )}); //change name
+Object.assign (student, {surname: (randomstring.generate(5))});
+
+//console.log(student.name); 
+//console.log(student.rate);
+
+let newstudent = JSON.stringify(student);
+console.log(newstudent);
+
+//create folder
+fs.mkdirSync(path, { recursive: true }, (err) => {
+    if (err) throw err;
   });
+
+  //create and update file
+fs.appendFileSync(filepath, newstudent, {'flag': 'w+'}, (err) => { 
+    if (err) throw err; 
+    console.log(`Saved!`); 
+}); 
+
+//read and output file
+fs.readFileSync(filepath, (err, data) => { 
+    if (err) throw err; 
+    console.log(data.toString()); 
+});
