@@ -4,8 +4,8 @@ let JSON = require ("JSON");
 let randomstring = require ("randomstring");
 //let write = require ("write");
 
-let path = 'D:\\Temp\\';
-let filepath = 'D:\\Temp\\Test.txt';
+let path = 'С:\\Temp\\';
+let filepath = 'С:\\Temp\\Test.txt';
 
 
 let student = {name:"Oksana", surname: "Petrova", rate: 21}; //Create a variable student and set ‘name’, ‘surname’ and ‘rate’ in json format
